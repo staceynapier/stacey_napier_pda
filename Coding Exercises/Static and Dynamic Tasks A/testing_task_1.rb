@@ -6,24 +6,24 @@
  
 def func1 val 
   if val = 1
-  return true
+  return true #indentation
   else
-  return false
+  return false #indentation
   end
 end
   
-dif max a b
+dif max a b #should be def and a comma between a&b
   if a > b
       return a 
   else
-  b
+  b #return and indent
   end 
 end 
-end 
+end # extra end
   
 def looper 
-  for i in 1..10
-  puts i
+  for i in 1..10 #bracket
+  puts i #indent
   end
 end
  
@@ -34,7 +34,7 @@ if looper == 10
 else
   puts "looper failed"
   failures = failures + 1
- 
+ #end
   
 if func1(3) == false
   puts "func1(3) passed"
@@ -51,8 +51,8 @@ else
   failrues = failures + 1
 end
 
-  
-if failures 
+   
+if failures # add in >= 10
   puts "Test Failed"
 else
   puts "Test Passed"
